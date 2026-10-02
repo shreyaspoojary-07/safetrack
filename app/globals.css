@@ -1,0 +1,40 @@
+:root {
+  --bg: #f6f4ef;
+  --ink: #1b2a22;
+  --muted: #5d6b63;
+  --green: #14532d;
+  --green-soft: #dcefe1;
+  --red: #b3261e;
+  --line: #d9d5c9;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; line-height: 1.5; }
+main { max-width: 520px; margin: 0 auto; padding: 24px 18px 60px; }
+main.wide { max-width: 1100px; }
+h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 1.1rem; margin: 22px 0 8px; }
+p { margin: 6px 0; }
+.muted { color: var(--muted); font-size: 0.92rem; }
+input[type=text], input[type=email], input[type=password], input[type=tel] {
+  width: 100%; padding: 12px; margin: 6px 0; border: 1px solid var(--line);
+  border-radius: 8px; font-size: 1rem; background: #fff; }
+button { font-size: 1rem; padding: 12px 16px; border-radius: 8px; border: 0;
+  background: var(--green); color: #fff; cursor: pointer; width: 100%; margin: 6px 0; }
+button.secondary { background: transparent; color: var(--green); border: 1px solid var(--green); }
+button.sos { background: var(--red); font-size: 1.2rem; padding: 18px; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+button:focus-visible, input:focus-visible { outline: 3px solid #2f8f5b; outline-offset: 2px; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 14px 0; }
+.status { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: #aaa; }
+.dot.on { background: #1e9e55; box-shadow: 0 0 0 4px var(--green-soft); }
+.switch { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.switch input { width: 54px; height: 30px; accent-color: var(--green); }
+.error { color: var(--red); font-size: .92rem; }
+.grid { display: grid; grid-template-columns: 1fr 320px; gap: 16px; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+#map { height: 540px; border-radius: 12px; border: 1px solid var(--line); }
+.row { padding: 10px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.row.sos { background: #fdecea; padding-left: 8px; border-left: 4px solid var(--red); }
+.row b { display: block; }

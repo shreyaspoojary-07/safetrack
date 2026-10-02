@@ -1,0 +1,9 @@
+{
+  "name": "SafeTrack",
+  "short_name": "SafeTrack",
+  "start_url": "/share",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#14532d",
+  "icons": []
+}
